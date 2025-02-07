@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  img-sim-service:
+    build: .
+    image: img-sim:1.0.0
+    restart: unless-stopped
+    volumes:
+      - ./images:/app/images
+      - ./similarity_results.json:/app/similarity_results.json
+      - ./vector_similarities.json:/app/vector_similarities.json
+      
+

@@ -1,1 +1,1 @@
-# image-similarity
+# Image Similarity
